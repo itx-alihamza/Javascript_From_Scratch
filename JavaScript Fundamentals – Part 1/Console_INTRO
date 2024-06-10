@@ -1,0 +1,39 @@
+Console:
+In a web browser, the console is an object that provides a way to interact with the browser's debugging console. It allows you to log information, debug your code, and interact with the JavaScript environment.
+
+The console object provides several methods that you can use to output messages or data to the console. Some commonly used methods include:
+
+console.log():  
+This method is used to log messages or data to the console. It accepts any number of arguments and displays them in the console.
+
+console.error(): 
+This method is used to log error messages to the console. It is typically used to indicate that an error has occurred in your code.
+
+console.warn(): 
+This method is used to log warning messages to the console. It is typically used to indicate potential issues or areas of concern in your code.
+
+console.info(): 
+This method is used to log informational messages to the console. It is typically used to provide additional information about the execution of your code.
+
+console.clear(): 
+This method is used to clear the console and remove any previously logged messages.
+
+Here's an example of how you can use the console.log() method:
+    console.log("Hello, world!");
+
+When you run this code in a browser, it will log the message "Hello, world!" to the console.
+
+The console is a powerful tool for debugging and understanding the behavior of your code. It can help you identify and fix issues, as well as provide insights into the execution flow of your program.
+
+
+Example:
+let js = "amazing"
+if(js === "amazing") alert("Javascript in FUN!")
+
+js = 'boring'
+'boring'
+
+if(js === 'amazing') alert("Javascript is FUn")
+
+34+3+45
+82
