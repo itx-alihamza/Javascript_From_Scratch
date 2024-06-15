@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Falsy values: undefined, null, 0, '', NaN
+        //Truthy values: NOT falsy values
+
+        console.log(Boolean(0)); //false
+        console.log(Boolean(undefined)); //false
+        console.log(Boolean('Jonas')); //true
+        console.log(Boolean({})); //true
+        console.log(Boolean('')); //false
+
+        //let see how type coercion works in if else statement
+        const money = 0;
+        if (money) {
+            console.log('Horrar! We have money 🥳');
+        } else {
+            console.log('No money 😭');
+        }
+
+        let height;
+        if (height) {
+            console.log('YAY! Height is defined');
+        } else {
+            console.log('Height is UNDEFINED');
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Truthy and Falsy Values</h1>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Type Conversion:
+        //Type Conversion is the process of converting value from one data type to another.
+        //e.g. Number('34') => 34
+        //Type Coercion:
+        //Type Coercion is the process of converting value from one data type to another.
+        //e.g.
+        //+ operator is used for concatenation in case of strings and addition in case of numbers.
+        //In case of - * / operators, JS engine converts the string to number and then performs the operation.
+        //In case of == operator, JS engine converts the string to number and then compares.
+
+        //Diff between Type Conversion and Type Coercion is that in Type Conversion we explicitly convert the data type whereas in Type Coercion JS engine does it for us.
+
+        //Type Conversion
+        const inputYear = '1991';
+        console.log(Number(inputYear), inputYear);
+        console.log(Number(inputYear) + 18);
+
+        console.log(Number('jonas')); //NaN(Not a Number)
+        console.log(typeof NaN); //number
+
+        console.log(String(23), 23);
+
+        //Type Coercion
+        console.log('I am ' + 23 + ' years old');
+        console.log('23' - '10' - 3); //10
+        console.log('23' / '2');
+
+        let n = '1' + 1; //11
+        n = n - 1;
+    </script>
+</head>
+
+<body>
+    <h1>Type Conversion and Coercion</h1>
+</body>
+
+</html>

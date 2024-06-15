@@ -16,13 +16,44 @@
             BMI (28.3) is higher than John's (23.9)!"
             Hint: Use an if/else statement �
             GOOD LUCK � */
+        let markHieght = 1.69;
+        let markWeight = 78;
+        let johnHeight = 1.95;
+        let johnWeight = 92;
 
+        let markBMI = 78 / (1.69 ** 2);
+        let johnBMI = 92 / (1.95 ** 2);
 
+        let markHeigherBMI = markBMI > johnBMI;
+        console.log(markHeigherBMI);
+
+        markHeight = 1.88;
+        markWeight = 95;
+        johnHeight = 1.76;
+        johnWeight = 85;
+
+        markBMI = 95 / (1.88 ** 2);
+        johnBMI = 92 / (1.76 ** 2);
+
+        markHeigherBMI = markBMI > johnBMI;
+        console.log(markHeigherBMI);
+
+        if (markHeigherBMI) {
+            console.log(`Mark's BMI is hiegher than John's!`);
+        } else {
+            console.log(`John's BMI is heiger than Mark's!`);
+        }
+
+        if (markHeigherBMI) {
+            console.log(`BMI (${markBMI}) is heigher than BMI (${johnBMI}) .`);
+        } else {
+            console.log(`BMi (${johnBMI}) is heiger than BMI ${markBMI} .`);
+        }
     </script>
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Coding Challenge #2</h1>
 </body>
 
 </html>
