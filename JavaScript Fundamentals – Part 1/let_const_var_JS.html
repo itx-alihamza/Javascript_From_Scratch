@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //What is let, const and var?
+        //let:
+        //let is a block-scoped variable declaration keyword in JavaScript.
+        //variables declared with let can be reassigned but not redeclared.
+        //const:
+        //const is a block-scoped variable declaration keyword in JavaScript.
+        //variables declared with const must be assigned a value when they are declared.
+        //variables declared with const cannot be reassigned.
+        //var:
+        //var is a function-scoped variable declaration keyword in JavaScript.
+        //variables declared with var can be reassigned and redeclared.
+
+        //block-scoped:
+        //A block is a chunk of code bounded by {}. A block lives in curly braces.
+        //A block-scoped variable is a variable that is only accessible within the block it is defined.
+
+        //Function-scoped:
+        //A function is a block of code that is defined once but may be executed or invoked any number of times.
+        //A function-scoped variable is a variable that is only accessible within the function it is defined.
+
+        let age = 30;
+        age = 32;
+        console.log(age);
+
+        var job = 'programmer';
+        job = 'artist';
+        console.log(job);
+
+        const birthYear = 1991;
+        birthYear = 2023;//Error will be shown cuz we cannot reassign a const variable
+        console.log(birthYear);
+    </script>
+</head>
+
+<body>
+    <h1>let, const, var</h1>
+</body>
+
+</html>

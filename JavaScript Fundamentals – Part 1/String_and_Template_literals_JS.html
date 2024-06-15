@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Strings in JS:
+        //Strings are a data type used to represent text rather than numbers. They are used to store and manipulate text.
+        //Strings can be created using single quotes, double quotes, or backticks.
+        //e.g.
+        // let firstName = 'John';
+        // let lastName = "Smith";
+        //Template Literals:
+        //Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
+        //Template literals are enclosed by the backtick (` `) (grave accent) character instead of double or single quotes.
+        //e.g.
+        // let fullName = `${firstName} ${lastName}`;
+
+        const firstName = 'jonas';
+        const DOB = 1998;
+        const job = 'teacher';
+        //String concatenation:
+        const jonas = "i'm " + firstName + ", a " + (DOB - 2023) + ' years old ' + job + '.';
+        console.log(jonas);
+
+        //Template literals:
+        const jonasNew = `I'm ${firstName}, a ${2023 - DOB} years old ${job}.`;
+        console.log(jonasNew);
+
+        //Multi-line strings:
+        const multiLine = `string\nmultiple\nlines`;
+        console.log(multiLine);
+
+        console.log('String\nmultiple\nlines');
+
+        console.log(`String
+        multiple
+        lines`);
+
+    </script>
+</head>
+
+
+<body>
+    <h1>LECTURE: Strings and Template Literals</h1>
+</body>
+
+</html>

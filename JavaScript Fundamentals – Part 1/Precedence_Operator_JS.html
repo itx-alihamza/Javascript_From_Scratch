@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Operator Precedence:''
+        //      Operator precendence is a rule that defines the order in which operators are evaluated when an expression is being evaluated.
+        // 1. ()
+        // 2. !, ++, --
+        // 3. *, /, %
+        // 4. +, -
+        // 5. <, >, <=, >=
+        // 6. ==, !=
+        // 7. &&
+        // 8. ||
+        // 9. =, +=, -=, *=, /=, %=
+        // 10. ++, -- (postfix)
+
+        const now = 2017;
+        const ageAli = now - 1991;
+        const ageHamza = now - 2008;
+
+        console.log(now - 1991 > now - 2018);//calculation is done from left to right
+
+        let x, y;
+        x = y = 30 + 23 - 26;//calculaiton is done from right to left
+        console.log(x, y);
+
+
+        const avgAge = ageAli + ageHamza / 2;
+        console.log(ageAli, ageHamza, avgAge);//Ans: 26 9 30.5
+
+        //To get the correct answer we need to use the paranthesis
+        // avgAge = (ageAli + ageHamza) / 2;
+        // console.log(ageAli, ageHamza, avgAge);//Ans: 26 9 17.5
+    </script>
+</head>
+
+<body>
+    <h1>Operator Precedence</h1>
+</body>
+
+</html>
