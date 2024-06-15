@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Boolean Logic:
+        //      Boolean logic is a form of algebra in which all values are reduced to either true or false.
+        //      Boolean logic is used to make more complicated conditions for if statements.
+        //Types of Boolean Operators:
+        //      1. AND (&&)
+        //      2. OR (||)
+        //      3. NOT (!)
+        //      4. XOR (^) ....
+        const hasDriversLicence = true // A
+        const hasGoodVision = false; // B
+
+        console.log(hasDriversLicence && hasGoodVision);//false
+        console.log(hasDriversLicence || hasGoodVision);//true
+        console.log(!hasDriversLicence);//false
+        console.log(!hasDriversLicence && hasGoodVision);//false
+
+        const shouldDriver = hasDriversLicence && hasGoodVision;
+
+        if (shouldDriver) {
+            console.log('Ali is able to drive!');
+        } else {
+            console.log('someone else should drive...');
+        }
+
+        const isTired = true // C
+        console.log(hasDriversLicence || hasGoodVision || isTired);//true
+        console.log(hasDriversLicence && hasGoodVision && isTired);//false  
+
+        if (hasDriversLicence && !hasGoodVision && isTired) console.log('Ali is able to drive!');
+        else console.log('Someone else should drive');
+    </script>
+</head>
+
+<body>
+    <h1>Boolean Logic</h1>
+</body>
+
+</html>
