@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Array methods used so far:
+        //push() - add element at the end and returns the length of the array
+        //unshift() - add an element at beginning and returns the length of the array
+        //pop() - remove the last element and returns the removed element
+        //shift() - remove the first element and returns the removed element
+        //indexOf() - returns the index of the element
+        //includes() - returns true if the element is present in the array
+
+        //Basic array operation:
+        const friends = ['Micheal', 'Steven', 'Peter'];
+        const newLength = friends.push('Jay');//add element at the end and returns the length of the array
+        console.log(friends);
+        console.log(newLength);
+
+        friends.unshift('John');//add an element at beginning and returns the length of the array
+        console.log(friends);
+
+        //To remove the last element of the array
+        friends.pop(); // Last element is removed and returned
+        const popped = friends.pop(); // Last element is removed and returned
+        console.log(popped);
+        console.log(friends);
+
+        friends.shift(); //remove the first element and returns the removed element
+        console.log(friends);
+
+        console.log(friends.indexOf('Steven')); //returns the index of the element  
+        console.log(friends.indexOf('Bob')); //returns -1 if the element is not present in the array
+
+        friends.push(23);
+        console.log(friends.includes('Steven')); //returns true if the element is present in the array
+        console.log(friends.includes('Bob')); //returns false if the element is not present in the array
+        console.log(friends.includes('23')); //returns false because the type is different
+        console.log(friends.includes(23)); //returns true because the type is same.
+    </script>
+</head>
+
+<body>
+    <h1>Basic array operations</h1>
+</body>
+
+</html>

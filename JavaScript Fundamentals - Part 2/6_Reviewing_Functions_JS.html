@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const calAge = function (birthYear) {
+            return 2037 - birthYear;
+        }
+
+        const retAge = function (age) {
+            return 65 - age;
+        }
+        const yearsUntilRetirement = function (birthYear, firstName) {
+            const age = calAge(birthYear);
+            const retirement = retAge(age);
+            if (retirement > 0) return retirement;
+            else return -1;
+            // return retirement;
+        }
+
+        console.log(yearsUntilRetirement(1970, 'Ali'));
+    </script>
+</head>
+
+<body>
+    <h1>Reviewing Functions</h1>
+</body>
+
+</html>

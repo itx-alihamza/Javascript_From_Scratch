@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        //Looping Arrays Breaking and Continuing:
+        //Looping Arrays:
+        //Looping Arrays is a very common task in programming. We often need to go over all the elements of an array to do something with them.
+        // For example, we might want to display all the elements in the console, or calculate the sum of all the elements.
+        //There are several ways to loop over arrays in JavaScript:
+        //  1. The for loop 
+        //  Syntax:
+        //   for(let i = 0; i < jonasArray.length; i++){ 
+        //  }
+
+        //Breaking and Continuing:
+        //  Sometimes we might want to break out of a loop or skip the current iteration of the loop.
+        //The break statement:
+        //  The break statement is used to exit a loop.
+        //The continue statement:
+        //  The continue statement is used to exit the current iteration of the loop and continue to the next one.
+
+        //Iterating over an array:
+        const jonasArray = [
+            'Jonas',
+            'Schemedtmann',
+            2037 - 1991,
+            'teacher',
+            ['Micheal', 'Peter', 'Steven'],
+            true
+        ];
+        const typesArray = [];
+        const agesArray = []
+
+        for (let i = 0; i < jonasArray.length; i++) {
+            console.log(jonasArray[i], typeof (jonasArray[i]));
+
+            //Filling the newArray array
+            typesArray[i] = typeof (jonasArray[i]);
+            // newArray.push(typeof (jonasArray[i]));
+        }
+        console.log(typesArray);
+
+        const years = [1991, 2007, 1969, 2020];
+        for (let i = 0; i < years.length; i++) {
+            agesArray.push(2037 - years[i]);
+        }
+        console.log(agesArray);
+
+        //Continue and Break:
+        console.log(`---CONTINUE---`)
+        for (let i = 0; i < jonasArray.length; i++) {
+            if (typeof (jonasArray[i]) !== 'string') continue;
+            //if continue is executed, the code below will not be executed
+            console.log(jonasArray[i], typeof (jonasArray[i]));
+        }
+        console.log(`---BREAK---`);
+        for (let i = 0; i < jonasArray.length; i++) {
+            //if break is executed, the loop will be terminatedArray
+            if (typeof (jonasArray[i]) !== 'string') break;
+            console.log(jonasArray[i], typeof (jonasArray[i]));
+        }
+        console.log(jonasArray);
+
+    </script>
+</head>
+
+<body>
+    <h1>Looping Arrays Breaking and Continuing</h1>
+</body>
+
+</html>

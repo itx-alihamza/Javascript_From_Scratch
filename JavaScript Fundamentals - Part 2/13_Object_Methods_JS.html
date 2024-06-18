@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        //Object Methods:
+        //Methods are functions that we can add to objects.
+        //Methods are used to perform actions.
+        //Methods are used to perform operations on objects properties.
+        //Methods are used to perform operations on objects properties values and return the result.
+        const jonas = {
+            firstName: 'jonas',
+            lastName: 'Schmedtman',
+            birthYear: '1991',
+            job: 'Teacher',
+            fiends: ['Micheal', 'Peter', 'Steven'],
+            hasDriversLicense: true,
+            // calcAge: function (birthYear) {
+            //     return 2037 - birthYear
+            // }
+            // calcAge: function () {
+            //     console.log(this);
+            //     return 2037 - this.birthYear;
+            // }
+            calcAge: function () {
+                this.age = 2037 - this.birthYear;
+                return this.age;
+            },
+            getSummary: function () {
+                console.log(`${this.firstName} is a ${this.age}-years old  ${this.job}, and he ${this.hasDriversLicense === true ? 'has a driving licencse' : 'does not have a driving licence'}`);
+            }
+        };
+
+        //Whenever we access a property using [] its name should be in string.
+        // console.log(jonas['calcAge']());
+        console.log(jonas.calcAge());
+
+        console.log(jonas.age);
+        console.log(jonas.age);
+        console.log(jonas.age);
+
+        //Challenge:
+        //Jonas is a 46-years old teacher, and he has a driver's license
+        jonas.getSummary();
+
+    </script>
+</head>
+
+<body>
+    <h1>Object Methods</h1>
+</body>
+
+</html>

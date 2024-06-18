@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Functions:
+        //A function is a block of code that can be reused.
+        //Functions are the most important building blocks of JavaScript.
+        //A function is executed when "something" invokes it (calls it).
+        //You can reuse code: Define the code once, and use it many times.
+
+        //function declaration or function statement
+        function logger() {
+            log('My name is jonas');
+        }
+        //Passing arguments here or not will not affect the code
+        logger();//calling / running / invoking function
+        logger();
+        logger();
+
+        function fruitProcessor(apples, oranges) {
+            console.log(apples, oranges);//Here we pass the parameters
+            const appleJuice = 'Juice with ${apples} apples and ${oranges} oranges.';
+            return appleJuice;
+        }
+
+        let appleJuice = fruitProcessor(5, 0);//Here we pass the arguments
+        console.log(appleJuice);// OR
+        console.log(fruitProcessor(5, 0));
+
+        let appleOrangeJuice = fruitProcessor(2, 5);
+        console.log(appleOrangeJuice)
+    </script>
+</head>
+
+<body>
+    <h1>Functions</h1>
+</body>
+
+</html>

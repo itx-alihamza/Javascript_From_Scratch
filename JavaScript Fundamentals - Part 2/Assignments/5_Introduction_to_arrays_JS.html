@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        'use strict';
+        /*LECTURE: Introduction to Arrays
+        1. Create an array containing 4 population values of 4 countries of your choice.
+        You may use the values you have been using previously. Store this array into a
+        variable called 'populations'
+        2. Log to the console whether the array has 4 elements or not (true or false)
+        3. Create an array called 'percentages' containing the percentages of the
+        world population for these 4 population values. Use the function
+        'percentageOfWorld1' that you created earlier to compute the 4
+        percentage values*/
+        percentageOfWorld1 = population => population / 80000000000 * 100;
+
+        let populaiotns = [330000000, 1140000000, 3300000000, 220000000];
+        console.log(populaiotns);
+        // console.log('Displaying array', populaiotns.map((item, index) => item * 2)); 
+        let percentage = [percentageOfWorld1(330000000).toFixed(2), percentageOfWorld1(1140000000).toFixed(2), percentageOfWorld1(3300000000).toFixed(2), percentageOfWorld1(220000000).toFixed(2)];
+        console.log(percentage);
+    </script>
+</head>
+
+<body>
+    <h1>LECTURE: Introduction to Arrays</h1>
+</body>
+
+</html>

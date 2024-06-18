@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //In JS functions are just values like numbers, strings, arrays etc
+        //Hoisiting: In JS you can use the function before you declare it
+        //Function Declaration:
+        //Funciton Declaration can be called before the function is declared
+        //Function Expression:
+        //Function Expression cannot be called before the function is declared
+
+        //Function Declaration
+        function calAge1(birthYer) {
+            return 2037 - birthYer;
+        }
+        const age1 = calAge1(1991);
+        console.log(age1);
+
+        //Function Expression
+        const calAge2 = function (birthYer) {
+            return 2037 - birthYer;
+        }
+        const age2 = calAge2(1991);
+        console.log(age2);
+
+        console.log(age1, age2);
+    </script>
+</head>
+
+<body>
+    <h1>Function Declaration vs Expressions</h1>
+</body>
+
+</html>

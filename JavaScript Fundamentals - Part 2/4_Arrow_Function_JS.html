@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Arrow Function:
+        //Arrow function is a new way of writing functions in JS
+        //Arrow function is a shorter way of writing a function expression
+        //Arrow function does not get its own this keyword
+        //Arrow function is not hoisted
+        //Arrow function is always anonymous
+        //Arrow function is not suitable for methods and constructors,
+        //call, apply and bind methods, prototype methods, object methods, event handlers
+        // callback functions
+        //Arrow function is not suitable for functions that need arguments object
+        //Syntax:
+        //const functionName = (parameters) => {code block}
+
+        //Function expression
+        const calAge2 = function (birthYear) {
+            return 2037 - birthYear;
+        }
+        console.log(calAge2(1991));
+
+        //Arrow function expression
+        const calAge3 = birthYear => 2037 - birthYear;//Here calAge3 is a function and birthYear is a parameter
+        const age3 = calAge3(1991);
+        console.log(age3);
+
+        const yearUntilTetirement = birthYear => {
+            const age = 2037 - birthYear;
+            const retirement = 65 - age;
+            return retirement;
+        }
+        console.log(yearUntilTetirement(1991));
+
+        const yearUntilTetirement2 = (birthYear, firstName) => {
+            const age = 2037 - birthYear;
+            const retirement = 65 - age;
+            return `${firstName} retires in ${retirement} years`;
+        }
+        console.log(yearUntilTetirement2(1991, 'Jonas'));
+
+    </script>
+</head>
+
+<body>
+    <h1>Arrow Function</h1>
+</body>
+
+</html>

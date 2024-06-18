@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        //Dot vs. Bracket Notation:
+        //DOT:
+        //Dot notation is used when we know the name of the property we want to access.
+        //When we need to use Dot Notation:
+        //When we know the name of the property we want to access.
+
+        //Bracket:
+        //Bracket notation is used when we don't know the name of the property we want to access.
+        //In braket we can use any expression to access the property.
+        //When we need to use Bracket Notation:
+        //When we don't know the name of the property we want to access and we want to use
+        // expression to access the property.
+        const jonas = {
+            firstName: 'Jonas',
+            lastName: 'Schmedtmann',
+            age: 2037 - 1991,
+            job: 'teacher',
+            friends: ['Michael', 'Peter', 'Steven']
+        };
+        //Access data using . Operator.
+        console.log(jonas.lastName);
+        //Access data using [] Operator.
+        console.log(jonas['lastName']);
+
+        //Access data using expression.
+        const nameKey = 'Name';
+        console.log(jonas['first' + nameKey]);//Here first then name will be concatenated and then it will be used to access the property.
+        console.log(jonas['last' + nameKey]);//Here last then name will be concatenated and then it will be used to access the property.
+        //Error:
+        // console.log(jonas['age' + namekey]);//error because ageName is not a property of jonas object.
+
+        const interestedIn = prompt('What do you want to now about jonas? Choose between firstName, lastNmae, age , job, and friends');
+        if (jonas[interestedIn]) {
+            console.log(jonas[interestedIn]);
+        } else {
+            console.log('Wrong request! Choose between firstName, lastNmae, age , job, and friends');
+        }
+
+        //Here we can add new properties to the object using Dot and Bracket Notation.
+        jonas.location = 'Pakistan';
+        jonas['city'] = 'Islamabad';
+        console.log(jonas);
+
+        //Challenge:
+        //Jonas has three friends, and his best frinend is called michael
+        console.log(`${jonas.firstName} has ${jonas.friends.length} best friends ${jonas['friends'][0]}, ${jonas['friends'][1]} and ${jonas['friends'][2]}`);
+        console.log(`${jonas.firstName} has ${jonas.friends.length} best friends ${jonas.friends[0]}, ${jonas.friends[1]}, ${jonas.friends[2]}`);
+    </script>
+</head>
+
+<body>
+    <h1>Dot vs. Bracket Notation</h1>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        let firstName = 'Ali';
+        let birthYear = 1998;
+        let year = 2024;
+        let job = 'Software Enginner';
+
+        //Old way
+        const ali = "i'm " + firstName + ' a ' + (year - birthYear) + ' years old ' + job;
+        console.log(ali);
+        //EX6(ECMA Script 6) update Template literal
+        const aliNew = `i'm ${firstName} a ${year - birthYear} years old ${job}`;
+        console.log(aliNew);
+        console.log(`Just a regular string....`);
+
+        //old way
+        console.log('String \n\
+with\n\
+multiple lines');
+        //EX6(ECMA Script 6) update Template literal
+        console.log(`string  
+with 
+multiple strings`);
+    </script>
+</head>
+
+<body>
+    <h1>Strings and Template Literals</h1>
+</body>
+
+</html>
